@@ -1,0 +1,4 @@
+.jodit-wysiwyg{
+    min-height: calc(80vh - 90px) !important;
+    background-color: black !important;
+}
