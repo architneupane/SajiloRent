@@ -3,39 +3,36 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main  # Change to your default branch name if it's not `main`
-
-permissions:
-  contents: read
-  pages: write
-  id-token: write
+      - main
 
 jobs:
   build:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
 
     steps:
-      # Checkout the repository code
       - name: Checkout repository
         uses: actions/checkout@v3
-
-      # Set up Node.js
+      
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '18' # or whichever version your project requires
+          node-version: '18'
 
-      # Install dependencies
+      - name: Print Node and npm versions
+        run: |
+          node -v
+          npm -v
+
       - name: Install dependencies
-        run: npm install
+        run: npm ci
 
-      # Build the Vite project
-      - name: Build project
-        run: npm run build
+      - name: Build the project
+        run: |
+          npm run build || { echo "Build failed"; exit 1; }
 
-      # Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
+        continue-on-error: true  # Continue to capture errors for debug
