@@ -1,0 +1,85 @@
+.vendor-rent-management {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.orders-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.order-card {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.order-details {
+  margin-bottom: 20px;
+}
+
+.order-details h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #2563eb;
+}
+
+.order-details p {
+  margin: 5px 0;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.order-actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.approve-button,
+.decline-button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.approve-button {
+  background-color: #4caf50;
+  color: white;
+}
+
+.approve-button:hover {
+  background-color: #45a049;
+}
+
+.decline-button {
+  background-color: #f44336;
+  color: white;
+}
+
+.decline-button:hover {
+  background-color: #d32f2f;
+}
+
+.error-message {
+  color: #f44336;
+  text-align: center;
+  margin-bottom: 20px;
+}

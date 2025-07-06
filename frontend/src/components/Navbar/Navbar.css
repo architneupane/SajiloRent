@@ -1,0 +1,134 @@
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+  background-color: #000;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-logo a {
+  font-size: 30px; 
+  color: white;
+  margin-left: 16px;
+  text-decoration: none;
+}
+
+.navbar-links {
+  display: flex;
+  justify-content: center;
+  padding-left: 45px;
+  flex: 1;
+  align-items: center;
+  gap: 40px;
+}
+
+.navbar-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.navbar-links a:hover {
+  color: #2563eb; 
+  transform: scale(1.1);
+}
+
+
+.navbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px; 
+}
+
+
+.navbar-logout {
+  background-color: #dc2626; 
+  color: white;
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.navbar-signup {
+  background-color: #2563eb;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.navbar-login {
+  background-color: #2563eb;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+  margin-right: 10px;
+}
+
+.navbar-login:hover {
+  background-color: #1e40af;
+}
+
+.navbar-role {
+  display: inline-block;
+  padding-right: 20px;
+}
+
+.role-badge {
+  display: inline-block;
+  padding: 5px 10px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: white;
+  text-transform: capitalize;
+}
+
+.role-badge.user {
+  color: 	#1DB954; 
+}
+
+.role-badge.vendor {
+  color: #ff9900; 
+}
+
+.role-badge.guest {
+  color: #9e9e9e; 
+}
+
+.role.badge.admin {
+  color: #ff0000; 
+}
+
+.navbar-rent-management{
+  background-color: #000; 
+  color: #fff;
+  padding: 6px 14px;
+  border:2px solid;
+  border-color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.navbar-rent-management:hover {
+  transform: scale(1.05);
+  color: #2563eb;
+}

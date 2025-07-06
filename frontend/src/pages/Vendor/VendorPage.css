@@ -1,0 +1,82 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+  }
+
+  .listing-container {
+    max-width: 600px;
+    margin: 35px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .listing-container h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 20px;
+  }
+  
+  .listing-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .inputbox {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .inputbox label {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #333;
+  }
+  
+  .inputbox input,
+  .inputbox textarea,
+  .inputbox select {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s;
+  }
+  
+  .inputbox input:focus,
+  .inputbox textarea:focus,
+  .inputbox select:focus {
+    border-color: #2563eb;
+    outline: none;
+  }
+  
+  .inputbox textarea {
+    resize: none;
+    height: 100px;
+  }
+  
+  .submit-button {
+    background-color: #2563eb;
+    color: white;
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-button:hover {
+    background-color: #1e40af;
+  }

@@ -1,4 +1,5 @@
-.jodit-wysiwyg{
-    min-height: calc(80vh - 90px) !important;
-    background-color: black !important;
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Segoe UI', sans-serif;
 }
